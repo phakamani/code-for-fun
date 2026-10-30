@@ -1,0 +1,17 @@
+@use '../../../styles/colors' as c;
+@use '../../../styles/breakpoints' as bp;
+
+:host {
+    display: block;
+    min-width: 0;
+}
+
+.side-nav {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 1rem;
+    background-color: c.$surface-nav;
+    border-bottom: 1px solid #d8dde3;
+
+    // Desktop sidebar gills the grid column
+}

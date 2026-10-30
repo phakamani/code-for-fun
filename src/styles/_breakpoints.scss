@@ -1,0 +1,9 @@
+$bp-md: 48rem;
+
+@mixin up($bp) {
+    @media (min-width: $bp) {@content;}
+}
+
+@mixin down($bp) {
+    @media (max-width: $bp - 0.02rem) { @content; }
+}

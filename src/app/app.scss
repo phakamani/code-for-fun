@@ -1,0 +1,28 @@
+@use './../styles/breakpoints' as *;
+
+$sidebar-width: 16em;
+
+:host {
+    display: block;
+    min-height: 100vh;
+}
+
+.app-layout {
+    min-height: 100vh;
+
+    @include up($bp-md) {
+        display: grid;
+        grid-template-columns: $sidebar-width minmax(0, 1fr);
+    }
+}
+
+
+.page-content {
+    min-width: 0;
+    padding: 1.5rem;
+
+    @include up($bp-md) {
+        padding: 1.5rem;
+    }
+}
+
