@@ -1,0 +1,11 @@
+<header class="top-bar">
+    <button type="button"
+        aria-label="Toggle navigation"
+        aria-controls="side-nav"
+        [attr.aria-expanded]="navOpen()"
+        (click)="toggle.emit()"> ☰
+    </button>
+    @if(!navOpen()) {
+        <a class="top-bar__brand" routerLink="/">C0de4Fun</a>
+    }
+</header>

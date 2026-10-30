@@ -1,5 +1,6 @@
-<main class="app-layout">
-    <app-side-nav />
+<app-top-bar [navOpen]="navOpen()" (toggle)="toggleNav()" />
+<main class="app-layout" [class.app-layout--nav-open]="navOpen()">
+    <app-side-nav id="side-nav"/>
     <section class="page-content">
       <router-outlet />
     </section>

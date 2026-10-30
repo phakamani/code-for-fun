@@ -4,8 +4,8 @@ export const routes: Routes = [
      {
         path: '',
         loadComponent: () => 
-            import('./containers/bitwise-operators-container/bitwise-operators-container')
-                .then(m => m.BitwiseOperatorsContainer),
+            import('./pages/home/home')
+                .then(m => m.Home),
         
     },
     {

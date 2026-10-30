@@ -1,1 +1,9 @@
-<p>I am the bitwise operator</p>
+@for (item of numbersForm.numbers; track $index) {
+    <input type="number" [formField]="item.insertedNumber" />
+    @for (error of item.insertedNumber().errors(); track $index) {
+        <span class="error">{{ error.message }}</span>
+    }
+
+}
+
+<button type="button" (click)="addNumber()">Add number</button>
